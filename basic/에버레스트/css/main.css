@@ -36,8 +36,8 @@ body {
   /* position: absolute; */
   position: fixed;
   width: 100%;
-  top: 0;
-  left: 0;
+  /* ztop: 0; */
+  /* left: 0; */
 }
 
 .logo {
@@ -91,10 +91,10 @@ body {
 }
 .social i {
   color: #9fa6ff;
-  transition: 00.3s;
 }
 .social a:hover i {
   color: white;
+  transition: 00.3s;
 }
 
 .title {
@@ -103,6 +103,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 100%;
 }
 .title h2 {
   font-family: "Dancing Script", cursive;
@@ -125,35 +126,34 @@ body {
 
 .footer i {
   color: #9fa6ff;
-  transition: all 0.3s;
 }
 .footer a:hover i {
   color: white;
+  transition: all 0.3s;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .menu {
     display: none;
   }
-}
+  .title h2 {
+    font-size: 60px;
+    padding: 0 20px;
+  }
+  .title p {
+    font-size: 12px;
+    padding: 0 40px;
+  }
 
-.title h2 {
-  font-size: 60px;
-  padding: 0 20px;
-}
-.title p {
-  font-size: 12px;
-  padding: 0 40px;
-}
+  .social {
+    display: none;
+  }
 
-.social {
-  display: none;
-}
+  .sign {
+    display: none;
+  }
 
-.sign {
-  display: none;
-}
-
-.bars {
-  display: block;
+  .bars {
+    display: block;
+  }
 }
