@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Nanum+Gothic:wght@400;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+i {
+  font-size: 24px;
+}
+
+body {
+  color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  line-height: 1.8;
+}
+
+.container {
+  height: 100vh;
+  background-image: url("../images/멍.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  /* position: absolute; */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.logo img {
+  width: 46px;
+}
+
+.sign {
+  margin-left: 70px;
+}
+.sign img {
+  width: 16px;
+}
+
+.bars {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  gap: 60px;
+}
+.menu a {
+  background-color: transparent;
+  padding: 6px 20px;
+  border-radius: 40px;
+  border: 1px solid transparent;
+  transition: all 0.6s;
+}
+.menu a:hover {
+  border: 1px solid #ffff;
+}
+
+.menu a.on {
+  background-color: #ffff;
+  color: black;
+}
+
+.social {
+  /* position: absolute; */
+  position: fixed;
+  top: 50%;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-50%);
+  gap: 40px;
+}
+.social i {
+  color: #9fa6ff;
+  transition: 00.3s;
+}
+.social a:hover i {
+  color: white;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.title h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 100px;
+}
+.title p {
+  font-size: 13px;
+  opacity: 0.8;
+}
+.footer {
+  /* position: absolute; */
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.footer i {
+  color: #9fa6ff;
+  transition: all 0.3s;
+}
+.footer a:hover i {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+.title h2 {
+  font-size: 60px;
+  padding: 0 20px;
+}
+.title p {
+  font-size: 12px;
+  padding: 0 40px;
+}
+
+.social {
+  display: none;
+}
+
+.sign {
+  display: none;
+}
+
+.bars {
+  display: block;
+}
