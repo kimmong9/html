@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+i {
+  font-size: 20px;
+}
+
+body {
+  color: black;
+  background-color: #e2e7eb;
+}
+
+.container {
+  height: 100vh;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  padding: 0 30px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  gap: 0.5px;
+  font-family: "Electrolize", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+.logo p {
+  font-size: 12px;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  gap: 71px;
+}
+.menu a {
+  background-color: transparent;
+  padding: 6px 20px;
+  transition: all 0.3s;
+}
+/* .menu i {
+  color: black;
+} */
+
+.menu a:hover {
+  color: tomato;
+}
+
+.menu a.on {
+  color: tomato;
+}
+
+.bars {
+  display: none;
+}
+
+.social {
+  /* position: absolute; */
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+.social i {
+  color: black;
+}
+.social a:hover i {
+  color: white;
+  transition: all 0.3s;
+}
+.title {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+.title h2 {
+  font-family: "Electrolize", cursive;
+  font-size: 50px;
+}
+
+.sign {
+  margin-left: 70px;
+}
+
+@media (max-width: 950px) {
+  .menu {
+    display: none;
+  }
+
+  .social {
+    display: none;
+  }
+  .sign {
+    display: none;
+  }
+  .bars {
+    display: block;
+    z-index: 1;
+  }
+
+  .title h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 565px) {
+  .title h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo {
+    font-size: 10px;
+  }
+  .logo p {
+    font-size: 5px;
+  }
+}
